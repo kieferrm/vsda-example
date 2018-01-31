@@ -1,0 +1,32 @@
+{
+    "name": "vsda-sample",
+    "displayName": "vsda-sample",
+    "description": "vsda sample",
+    "version": "0.0.1",
+    "publisher": "kieferrm",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:vsda-sample.run"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vsda-sample.run",
+                "title": "VSDA-Sample Run"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43"
+    }
+}
